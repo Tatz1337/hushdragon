@@ -8,26 +8,26 @@
   Hey, I'm working on a Cydia/Sileo Repo! Find it <a href="https://tatz1337.github.io/ResurrectionRepo/">here</a>!</div>
     <center><input class="form-control" type="text" id="search" onkeyup="myFunction()" placeholder="Search for file"></center>
     <script>
-$("#search").on("keyup", function() {
-    var value = $(this).val();
+ var items = [["test", "it's great", "https://www.amazon.com"], ["amazing", "cool", "https://www.google.com"]];
 
-    $("table tr").each(function(index) {
-        if (index !== 0) {
+  function display(filtedItems)
+    {
+      var tableHTML = "";
+      for (var x = 0; x < filtedItems.length; ++x)
+      {
+        tableHTML += "<tr>";
+        
+        // Assuming the list will always have length of 3
+        tableHTML += "<td>" + filtedItems[x][0] + "</td><td>" + filtedItems[x][1] + "</td><td>" + filtedItems[x][2] + "</td>";
 
-            $row = $(this);
-
-            var id = $row.find("td:first").text();
-
-            if (id.indexOf(value) !== 0) {
-                $row.hide();
-            }
-            else {
-                $row.show();
-            }
-        }
-    });
-});
+        tableHTML += "</tr>";
+      }
+      document.getElementsByTagName("tbody")[0].innerHTML = tableHTML;
+    }
+        
+        
 </script>
+
 <!--<div class="well"><pre style="background-color: black; border-color: black">        ,     \    /      ,        
        / \    )\__/(     / \       
       /   \  (_\  /_)   /   \      
@@ -221,4 +221,5 @@ $("#search").on("keyup", function() {
   </ul>
      </center>
 </nav>
+
 </html>
