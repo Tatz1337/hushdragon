@@ -85,7 +85,7 @@ for the service it applies to. Big thanks to DinglyDo for his help on the search
     
       if (searchText == "") display(items);
 	
-      else display(items.filter(word => word[0].includes(searchText)))
+      else display(items.filter(word => word[0].toLowerCase().includes(searchText.toLowerCase())))
     }
 
     display(items);
