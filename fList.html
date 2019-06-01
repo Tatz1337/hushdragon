@@ -1,0 +1,77 @@
+
+
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="hacker.css" rel="stylesheet">
+<title> H U S H&nbsp;&nbsp;D R A G O N</title>
+
+<!-- Favicon -->
+<link rel="icon" href="https://tatz1337.github.io/hushdragon/favicon.ico" type="image/x-icon">
+
+<!-- Banner -->
+</head><body><center><a href="index.html"><img style="padding-top: 10px" src="banner.gif"></a></center>
+
+  <!-- Message at top of page. -->
+<div class="well">Sup. I'll be putting things on here that I find useful or use. <font color="red">Don't anticipate any pirated stuff here.</font> If the item font is <font color="red">RED</font>, it may violate some terms of service for the service it applies to. Big thanks to DinglyDo for his help on the search function!</div>
+
+<!-- Alert Bubble at the top of the page, above the search bar -->
+<div style="padding-left: 30px	;" class="alert alert-warning" role="alert"> Hey, I'm working on a Cydia/Sileo Repo! Find it <a href="https://tatz1337.github.io/ResurrectionRepo/">here</a>!</div>
+
+
+<center>
+
+
+<a href="http://wmccpinetop.axiscam.net/view/viewer_index.shtml?id=184689">Public Camera #1</a>
+
+<p>Everything under this is random 'hacker' tools and the like.</p>
+
+<table class="table">
+<thead>
+ <tr>
+   <th><u><font color="yellow">Program/File</font></u></th>
+   <th><font color="yellow"><u>Description</u></font></th>
+   <th><font color="yellow"><u>Link</u></font></th>
+ </tr>
+</thead>
+<tbody>
+</tbody>
+
+</table>
+
+
+<script>
+// list of all table items
+    var items = [['AcidDr0p Super Common Pass List', 'Password List' ,'http://aciddr0p.net/pwls/supercommon.zip'], ['ILOVEU Virus Source','Classic Virus, Obviously Very Dangerous','http://aciddr0p.net/tutorials/iloveuvirus.zip'], ['Phishing Pages', 'Phishing pages for 34 services including AOL/AOL, Paypal, Gmail, Ebay, Facebook, ICQ, Itunes, Photobucket, Youtube, Yahoo, Skype, Rapid Share, Mega Upload and more.','http://aciddr0p.net/tutorials/All_Phishing_Pages.zip'], ['SwatTeam Website','Not actual SWAT team. Hacker file repository.', 'http://www.swateam.org.uk/downloads/'], ['C99 Shell','Famous ass shell','https://r57c99.com/1559425609-c99txt.html'], ['DQ99 Shell','Another Famous Ass Shell','http://www.r57c99.com/shell/1559425729-dqtxt.html'], ['webadmin Shell','webadmin','https://r57c99.com/1559425776-webadmintxt.html'], ['Java Drive by Site','Site that can run remote content if the user simply visits it with java! Since has been patched.','content/javadriveby.zip']];
+
+    function display(filtedItems)
+    {
+      var tableHTML = "";
+      for (var x = 0; x < filtedItems.length; ++x)
+      {
+        tableHTML += "<tr>";
+
+        // Assuming the list will always have length of 3
+        tableHTML += "<td>" + filtedItems[x][0] + "</td><td>" + filtedItems[x][1] + "</td><td><a href='" + filtedItems[x][2] + "'> <u>Download</u> </a></td>";
+
+        tableHTML += "</tr>";
+      }
+      document.getElementsByTagName("tbody")[0].innerHTML = tableHTML;
+    }
+
+    function myFunction()
+    {
+      var searchText = document.getElementById("search").value;
+
+      if (searchText == "") display(items);
+
+      else display(items.filter(word => word[0].toLowerCase().includes(searchText.toLowerCase())))
+    }
+
+    display(items);
+
+
+    function dontWork() {
+      alert("This download has been disabled either due to a dead link, or the file was deemed to be unsafe.")
+
+    }
+</script>
+  </center>
